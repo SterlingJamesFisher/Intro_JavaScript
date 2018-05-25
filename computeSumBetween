@@ -1,0 +1,10 @@
+function computeSumBetween(num1, num2) {
+  sum = 0
+  for (x = num1; x < num2; x++)
+  {
+    sum += x;
+  }
+  
+  return(sum);
+  
+}
