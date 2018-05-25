@@ -1,0 +1,18 @@
+function findMinLengthOfThreeWords(word1, word2, word3) {
+  word_array = [word1, word2, word3];
+  length_array = [word1.length, word2.length, word3.length];
+  return(Math.min(...length_array));
+/*
+  for (x = 0; x < 4; x++)
+  {
+    if (length_array[x] == Math.min(...length_array))
+    {
+      console.log(word_array[x])
+    }
+  }
+*/
+
+  // your code here
+}
+
+//findMinLengthOfThreeWords("Taco", "Bell", "Dog")
