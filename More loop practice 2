@@ -1,0 +1,10 @@
+function printStars(n)
+{
+  var star = "*"
+  for(x = 1; x <= n; x++)
+  {
+    console.log(star.repeat(x))
+  }
+}
+
+printStars(4)
