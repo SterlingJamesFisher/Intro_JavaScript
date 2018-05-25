@@ -1,0 +1,37 @@
+var library = [ 
+   { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254},
+   { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264},
+   { author: 'Aldous Huxley', title: 'Brave New World', libraryID: 3245},
+   { author: 'Stephen Hawking', title: 'A Brief History of Time', libraryID: 8237},
+   { author: 'Frank Herbert', title: 'Dune', libraryID: 390},
+   { author: 'Herman Hesse', title: 'Siddhartha', libraryID: 2112}
+   ];
+
+  
+console.log(library.sort(function(a,b){return(a.libraryID - b.libraryID)} ))
+
+/*
+var temp_library = [];
+
+
+   
+for (x = 0; x < library.length; x++)
+{
+  for(y = 0; y < library.length; y++)
+  {
+    for(z = 0; z < library.length; z++)
+    {
+      if(library[y].libraryID > library[z].libraryID)
+      {
+        break;
+      }
+      temp_library.push(library[y]);
+      delete library[y];
+      
+    }
+  }
+}
+
+console.log(temp_library)
+   
+*/
