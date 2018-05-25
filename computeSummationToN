@@ -1,0 +1,11 @@
+function computeSummationToN(n) {
+  var sum = 0;
+    for (x = 0; x < (n + 1); x++)
+  {
+    sum += x;
+  }
+  return(sum);
+}
+
+var output = computeSummationToN(6);
+console.log(output); // --> 21
