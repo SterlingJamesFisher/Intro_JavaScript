@@ -1,0 +1,22 @@
+var times = Number(prompt());
+
+var heads = 0;
+var tails = 0;
+
+for(x = 0; x < times; x++)
+{
+  flip = Math.floor(Math.random() * 2);
+  if(flip == 0)
+  {
+    heads++;
+  }
+  if(flip == 1)
+  {
+    tails++;
+  }
+}
+
+console.log("Total coin flips: ", times);
+console.log("======================");
+console.log("Heads ", heads);
+console.log("Tails ", tails);
