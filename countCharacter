@@ -1,0 +1,15 @@
+function countCharacter(str, char) {
+  var str_array = str.split("");
+  var str_length = str_array.length;
+  var char_count = 0
+  
+  for(x = 0; x < str_length; x++)
+  {
+    if(str_array[x] == char)
+    {
+      char_count += 1;
+    }
+  }
+  
+  return(char_count)
+}
