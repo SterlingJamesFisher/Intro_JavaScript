@@ -1,0 +1,28 @@
+function owassoRams(n)
+{
+  var elements = []
+  
+  for(x = 1; x < n + 1; x++)
+  {
+    if(x % 3 === 0 && x % 5 === 0)
+    {
+      elements.push("OwassoRams")
+    } else if(x % 3 === 0)
+    {
+      elements.push("Owasso")
+    } else if(x % 5 === 0)
+    {
+      elements.push("Rams")
+    } else
+    {
+      elements.push(x)
+    }
+  }
+  
+  return(elements)
+  
+}
+
+var output = owassoRams(15);
+
+console.log(output);
