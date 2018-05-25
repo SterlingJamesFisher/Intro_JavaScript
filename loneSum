@@ -1,0 +1,42 @@
+function loneSum(a,b,c)
+{
+  
+  numbers = [a, b, c];
+  times = 0;
+  
+  for(x = 0; x < numbers.length; x++)
+  {
+    
+    for(y = 0; y < numbers.length; y++)
+    {
+      
+      if(numbers[x] == numbers[y])
+      {
+        times++;
+        if(times >= 2)
+        {
+          
+          numbers[y] = 0;
+          
+        } 
+      }
+      
+    }
+    
+    if(times >= 2)
+    {
+          
+      numbers[x] = 0;
+          
+    } 
+    
+    times = 0;
+    
+  }
+  
+  return(numbers[0] + numbers[1] + numbers[2]);
+  
+}
+
+var output = loneSum(1,2,3);
+console.log(output)
